@@ -82,5 +82,6 @@ span { margin-left: 2rem; }
 @media (max-width: 900px) { .container { margin: 0 2rem; } .countryDes { display: none; } .countryBox { grid-template-columns: repeat(5, minmax(100px, 1fr)); } }
 @media (max-width: 800px) { .container { margin: 0 1rem; } .bottomContainer > .centerContent { width: 75%; border-left: none; padding: 0; padding-right: 1rem; } .bottomContainer > .leftContent { display: none; } }
 @media (max-width: 700px) { .bottomContainer > .rightContent { display: none; } .bottomContainer > .centerContent { width: 100%; border: none; padding: 0; } }
+@media (min-width: 1000px) { .scroll > .foto { width: 60%; float: left; } .scroll > .fontMin { margin-top: 1rem; } }
 @media (max-width: 1000px) { html { font-size: .75rem; } }
 @media (max-width: 250px) { html { font-size: .5rem; } }
