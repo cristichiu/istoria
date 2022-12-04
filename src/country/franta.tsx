@@ -8,7 +8,7 @@ const Franta = ({closeClick}: ILocal) => {
         <div className="countryContent">
             <div className="countryClose" onClick={() => closeClick("franta")}></div>
             <div className="scroll">
-                <div className="title">Franța</div>
+                <div className="title">Franta</div>
                 <div className="titleDescription">
                     <div className="line"></div>
                     <div className="text">Adunarea Naţională Constituantă</div>

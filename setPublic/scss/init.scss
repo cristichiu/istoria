@@ -45,7 +45,7 @@ body { background: $background; min-height: 100vh; font-family: 'Streamy'; color
 .countryClose::after, .countryClose::before { content: ''; position: absolute; width: 80%; height: 10%; background: red; }
 .countryClose::after { rotate: 45deg; } .countryClose::before { rotate: -45deg; }
 .countryContent > .scroll { overflow-y: auto; }
-.countryContent > .scroll > .title { font-size: 5rem; border-radius: 20px; font-family: 'Erie Roman'; }
+.countryContent > .scroll > .title { font-size: clamp(2.5rem, 5vw, 5rem); border-radius: 20px; font-family: 'Erie Roman'; }
 .doc1Foto { background: url("../foto/doc1.jpg"); }
 .doc2Foto { background: url("../foto/doc2.jpg"); }
 .doc3Foto { background: url("../foto/doc3.png"); aspect-ratio: 9/16 !important; }
