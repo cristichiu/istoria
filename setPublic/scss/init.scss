@@ -1,0 +1,86 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+*::-webkit-scrollbar { width: 0; height: 0; }
+body::-webkit-scrollbar { width: 0; height: 0; }
+*::-webkit-scrollbar-track { box-shadow: inset 0 0 5px rgb(0, 0, 0); border-radius: 10px; }
+*::-webkit-scrollbar-thumb { background: white; border-radius: 10px; }
+*::-webkit-scrollbar-thumb:hover, *::-webkit-scrollbar-thumb:focus { background: #9b9b9b; }
+*::-webkit-scrollbar-track:hover, *::-webkit-scrollbar-track:focus { box-shadow: inset 0 0 15px rgb(0, 0, 0); }
+
+$background: #f4f2ea; $text_regular: #152d1b; $text_light: #21452a;
+@import url('https://fonts.cdnfonts.com/css/western');
+@import url('https://fonts.cdnfonts.com/css/quesmar');
+@import url('https://fonts.cdnfonts.com/css/young-best');
+@import url('https://fonts.cdnfonts.com/css/erie-roman');
+@import url('https://fonts.cdnfonts.com/css/carrierhand');
+@import url('https://fonts.cdnfonts.com/css/streamy');
+body { background: $background; min-height: 100vh; font-family: 'Streamy'; color: $text_regular; font-size: 1.5rem }
+#root { min-height: 100vh; display: flex; }
+.container { margin: 0 3rem; height: 100vh; display: flex; flex-direction: column; width: 100%; scroll-snap-type: y mandatory; overflow-y: auto; }
+.topContent { display: flex; flex-direction: column; align-items: center; width: 100%; scroll-snap-align: start; }
+.top { color: $text_regular; font-family: 'young best'; display: flex; justify-content: space-between; margin-top: 2rem; width: 100%; }
+.top > .title { font-size: clamp(3rem, 8vw, 6rem); text-align: center; font-weight: 900; margin: 0 1rem }
+.top > .subTitle { display: flex; align-items: center; font-size: 1.5rem; font-family: 'Western'; }
+.titleDescription { display: flex; justify-content: center; align-items: center; width: 100%; position: relative; }
+.titleDescription > .text { font-size: 2rem; font-family: 'Young Best'; z-index: 100; background: $background; padding: 0 2rem; color: $text_light }
+.titleDescription > .line { width: 100%; height: 3px; background: black; position: absolute; }
+.countryBox { display: grid; grid-template-columns: repeat(9, minmax(100px, 1fr)); width: 100%; overflow: auto; margin-top: 1rem; background: rgba(211, 130, 100, .7); grid-gap: 1rem; }
+.countryBox > div { font-size: 1.5rem; width: 100%; text-align: center; cursor: pointer; padding: .5rem }
+.countryBox > .countryDes { font-family: serif; }
+
+.bottomContainer { height: calc(100vh - 2rem); display: flex; margin: 1rem 0; scroll-snap-align: start; }
+.bottomContainer > .centerContent { width: 50%; height: 100%; overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; border-right: 3px dashed black; border-left: 3px dashed black; padding: 0 1rem; }
+.centerContent > div { scroll-snap-align: start; min-height: 100%; padding: 2rem 0; text-align: center; }
+.bottomContainer > .rightContent, .bottomContainer > .leftContent { width: 25%; height: 100%; text-align: center; overflow-x: hidden; overflow-y: auto; }
+
+.text1 { font-size: 1.5rem; margin: 1rem; font-family: "Erie Roman"; }
+.groupText { padding: 1rem; margin: 1rem; border: 2px solid black; }
+.text2 { font-size: 2rem; }
+.text3 { font-size: 1.5rem; }
+.text4 { margin: 0 2rem; margin-top: 1rem; }
+
+.countryContainer { position: fixed; width: 100%; height: 100%; justify-content: center; align-items: center; z-index: 1000; opacity: 0; display: none; }
+.countryContainer > .countryContent { background: $background; box-shadow: 0 0 30px 10px black; margin: 3rem; display: flex; flex-direction: column; width: 75%; max-height: 75%; min-height: 300px; padding: 1rem; text-align: center; position: relative; }
+.countryClose { width: 40px; height: 40px; position: absolute; top: 5px; right: 5px; border: 3px solid rgb(33, 33, 33); display: flex; justify-content: center; align-items: center; box-shadow: 0 0 5px 1px black; backdrop-filter: blur(2px); cursor: pointer; z-index: 1500; }
+.countryClose::after, .countryClose::before { content: ''; position: absolute; width: 80%; height: 10%; background: red; }
+.countryClose::after { rotate: 45deg; } .countryClose::before { rotate: -45deg; }
+.countryContent > .scroll { overflow-y: auto; }
+.countryContent > .scroll > .title { font-size: 5rem; border-radius: 20px; font-family: 'Erie Roman'; }
+.doc1Foto { background: url("../foto/doc1.jpg"); }
+.doc2Foto { background: url("../foto/doc2.jpg"); }
+.doc3Foto { background: url("../foto/doc3.png"); aspect-ratio: 9/16 !important; }
+.doc4Foto { background: url("../foto/doc4.jpg"); }
+.doc6Foto { background: url("../foto/doc6.jpg"); }
+.rightContentFoto { background: url("../foto/rightSide.jpg"); }
+.leftContentFoto { background: url("../foto/leftSide.jpg"); }
+.spniaFoto { background: url("../foto/spania.jpg"); aspect-ratio: 9/16 !important; }
+.angliaFoto { background: url("../foto/anglia.jpg"); aspect-ratio: 9/16 !important; }
+.suaFoto { background: url("../foto/sua.jpg"); aspect-ratio: 9/16 !important; }
+.frantaFoto { background: url("../foto/franta.jpg"); }
+.italiaFoto { background: url("../foto/italia.jpg"); aspect-ratio: 9/16 !important; }
+.foto { aspect-ratio: 16/9; border: 1px solid black; display: flex; margin: 1rem; background-position: center; background-size: cover; filter: grayscale(100); }
+.docTitle { margin-bottom: 1rem; font-family: 'Erie Roman', }
+.docDesc { margin: 1rem; text-align: left; }
+
+
+.boldMin { font-weight: 700; }
+.boldMediu { font-weight: 800; }
+.boldMax { font-weight: 900; }
+.fontMin { font-size: 1.5rem; }
+.fontMediu { font-size: 2rem; }
+.fontMax { font-size: 2.5rem; }
+.borderRegular { border: 2px solid black; padding: .5rem; }
+.borderDashed { border: 2px dashed black; padding: .5rem; }
+.borderDotted { border: 2px dotted black; padding: .5rem; }
+.borderDouble { border: 2px double black; padding: .5rem; }
+.serifFont { font-family: serif; }
+span { margin-left: 2rem; }
+
+
+@media (max-width: 750px) { .top { justify-content: center; } .top > .subTitle { display: none; } }
+@media (max-width: 1100px) { .text4 { margin: 0 } }
+@media (max-width: 900px) { .container { margin: 0 2rem; } .countryDes { display: none; } .countryBox { grid-template-columns: repeat(5, minmax(100px, 1fr)); } }
+@media (max-width: 800px) { .container { margin: 0 1rem; } .bottomContainer > .centerContent { width: 75%; border-left: none; padding: 0; padding-right: 1rem; } .bottomContainer > .leftContent { display: none; } }
+@media (max-width: 700px) { .bottomContainer > .rightContent { display: none; } .bottomContainer > .centerContent { width: 100%; border: none; padding: 0; } }
+@media (max-width: 1000px) { html { font-size: .75rem; } }
+@media (max-width: 250px) { html { font-size: .5rem; } }

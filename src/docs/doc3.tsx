@@ -1,0 +1,19 @@
+const Doc3 = () => {
+    return (<>
+    <div className="fontMediu boldMax borderRegular docTitle">SUA</div>
+    <div className="fontMediu">SUA între Declarația Drepturilor din Virginia și Declarația de Independență</div>
+    <div className="fontMin docDesc">
+        <br /><span>D</span>eclarația a fost adoptată în unanimitate de a cincea Convenție Virginia de la Williamsburg, Virginia, la 12 iunie 1776, ca un document separat de Constituția Virginiei , care a fost adoptată ulterior la 29 iunie 1776.  În 1830, Declarația Drepturilor a fost încorporat în Constituția statului Virginia ca Articolul I, dar chiar înainte de aceasta, Declarația Drepturilor a Virginiei a afirmat că aceasta este „baza și fundamentul guvernului” în Virginia. O versiune ușor actualizată poate fi încă văzută în Constituția Virginiei, făcând-o în vigoare din punct de vedere legal până în prezent. 
+        Cinci secțiuni din cele 16 adoptate:
+        <br /><span>S</span>ecțiunea 1. Că toți oamenii sunt prin natură la fel de liberi și independenți și au anumite drepturi inerente, de care, atunci când intră într-o stare de societate, ei nu pot, prin nici un contract, să-și priveze sau să le desprindă posteritatea; și anume, bucurarea vieții și a libertății, cu mijloacele de dobândire și deținere a proprietății, și urmărirea și obținerea fericirii și siguranței.
+        <br /><span>S</span>ecțiunea 2. Că toată puterea este învestită și, în consecință, derivă din, popor; că magistrații sunt mandatarii și slujitorii lor și sunt în orice moment supuși acestora.
+        <br /><span>S</span>Secțiunea 3. Acel guvern este, sau ar trebui să fie, instituit pentru beneficiul comun, protecția și securitatea poporului, națiunii sau comunității; dintre toate diferitele moduri și forme de guvernare, cea mai bună este cea care este capabilă să producă cel mai mare grad de fericire și siguranță și este cel mai eficient protejată împotriva pericolului unei administrări defectuoase. Și că, atunci când orice guvern va fi considerat inadecvat sau contrar acestor scopuri, majoritatea comunității are un drept incontestabil, inalienabil și de neatins de a-l reforma, modifica sau desființa, în modul în care va fi considerat cel mai favorabil pentru bunăstarea publică.
+        <br /><span>S</span>Secțiunea 4. Nici unul dintre oameni nu are dreptul la remunerații sau privilegii exclusive sau separate de comunitate, ci în considerarea serviciilor publice; care, nefiind descendentă, nici funcţiile de magistrat, legiuitor sau judecător nu trebuie să fie ereditare.
+        <br /><span>S</span>ecțiunea 5. Că puterile legislative și executive ale statului să fie separate și distincte de sistemul judiciar; și pentru ca membrii primilor doi să poată fi reținuți de opresiune, simțind și participând la poverile oamenilor, ei ar trebui, la anumite perioade, să fie reduși la un post privat, să se întoarcă în corpul din care au fost luați inițial și posturile vacante să fie asigurate prin alegeri frecvente, sigure și regulate, în care toți, sau orice parte, foștii membri, să fie din nou eligibili sau neeligibili, conform legilor.
+        <div className="foto doc3Foto"></div>        
+        <br /><span>D</span>eclarația de independență a Statelor Unite de mai târziu include concepte de drepturi naturale. Considerăm că aceste adevăruri sunt de la sine înțelese, că toți oamenii sunt creați egali, că ei sunt înzestrați de Creatorul lor cu anumite Drepturi inalienabile, că printre acestea se numără Viața, Libertatea și căutarea Fericirii. - Că pentru a asigura aceste drepturi, Guvernele sunt instituite în rândul oamenilor, decurgând puterile lor drepte din consimțământul celor guvernați, - că ori de câte ori orice formă de guvernare devine distrugătoare pentru aceste scopuri, este dreptul poporului să o modifice sau să o desființeze și să instituie un nou guvern.
+        </div>
+    </>)
+}
+
+export default Doc3
